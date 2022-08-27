@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+$base-color: #F3F7FA;
+$text-main: #4A4A4A;
+$text-secondary: #A0B0B9;
+$accent: #2196F3 ;
+$highlight: #F1FCFF;
+$checkbox: #9ABBCE;
+$border: #DFE5EC;
+
+.sidebar {
+  background: white;
+  width: 232px;
+  height: 252px;
+  border-radius: 5px;
+  padding: 20px 0;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  &__header {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-left: 20px;
+  }
+  &__filters {
+    display: flex;
+    flex-direction: column;
+    >label:hover {
+      background-color: $highlight;
+    }
+
+  }
+  &__item {
+    padding: 10px 20px;
+    font-size: 13px;
+    line-height: 20px;
+
+  }
+  &__checker {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border: 1px solid $checkbox;
+    border-radius: 2px;
+  }
+  &__label {
+    margin-left: 30px;
+  }
+}
+
+.input:checked + .sidebar__checker {
+  border-color: $accent;
+  background: url("../../checkbox-checked.svg") no-repeat 50%;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

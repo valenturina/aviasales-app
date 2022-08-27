@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+$base-color: #F3F7FA;
+$text-main: #4A4A4A;
+$text-secondary: #A0B0B9;
+$accent: #2196F3 ;
+$highlight: #F1FCFF;
+$checkbox: #9ABBCE;
+$border: #DFE5EC;
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: $base-color;
+  font-family: 'Open Sans', sans-serif;
+  color: $text-main;
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  button {
+    style: none;
+    outline: none;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+  }
+  h1, h2, h3, h4, h5 {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.container {
+  outline: 1px solid #245a62;
+  min-height: 100vh;
+  max-width: 753px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-header {
+  align-self: center;
+  margin-top: 50px;
+}
+
+.content {
+  display: flex;
+  flex: 1 1 auto;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.tickets-block {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.show-more {
+  &__btn {
+    padding: 15px 20px;
+    background-color: $accent;
+    border-radius: 5px;
+    font-family: "Open Sans";
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+    font-size: 12px;
+    font-style: normal;
+    line-height: 20px;
+    width: 100%
+  }
+}

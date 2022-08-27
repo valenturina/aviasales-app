@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+.sidebar {
+  background: white;
+  width: 232px;
+  height: 252px;
+  border-radius: 5px;
+  padding: 20px 0;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+.sidebar__header {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-left: 20px;
+}
+.sidebar__filters {
+  display: flex;
+  flex-direction: column;
+}
+.sidebar__filters > label:hover {
+  background-color: #F1FCFF;
+}
+.sidebar__item {
+  padding: 10px 20px;
+  font-size: 13px;
+  line-height: 20px;
+}
+.sidebar__checker {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border: 1px solid #9ABBCE;
+  border-radius: 2px;
+}
+.sidebar__label {
+  margin-left: 30px;
+}
+
+.input:checked + .sidebar__checker {
+  border-color: #2196F3;
+  background: url("../../checkbox-checked.svg") no-repeat 50%;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/*# sourceMappingURL=sidebar.css.map */

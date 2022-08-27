@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+$base-color: #F3F7FA;
+$text-main: #4A4A4A;
+$text-secondary: #A0B0B9;
+$accent: #2196F3 ;
+$highlight: #F1FCFF;
+$checkbox: #9ABBCE;
+$border: #DFE5EC;
+
+.ticket {
+  &__content {
+    width: 502px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    gap: 10px;
+  }
+  &__header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  &__price {
+    color: $accent;
+    text-transform: uppercase;
+  }
+  &__info {
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 14px;
+    display: flex;
+    gap: 20px;
+    line-height: 21px;
+    font-weight: 600;
+    > div {
+      width: 142px;
+    }
+  }
+  &__info--header {
+    font-size: 12px;
+    color: $text-secondary;
+    line-height: 18px;
+  }
+}
